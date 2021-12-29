@@ -2,18 +2,12 @@
 
 <html lang="en">
 <head>
-    <meta charset="windows-1252" />
-    <meta name="viewport" content="width=1024" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <title>impress.js | presentation tool based on the power of CSS3 transforms and transitions in modern browsers | by Bartek Szopka @bartaz</title>
-    
-    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
-    <meta name="author" content="Bartek Szopka" />
+    <title>Little presentation</title>
 
     <link href="//fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
 
     
-    <link rel="shortcut icon" href="https://resolquem.x10.mx/resolquem.png" />
+    <link rel="shortcut icon" href="resolquem.png" />
 </head>
 
 <body class="impress-not-supported">
@@ -21,7 +15,7 @@
 <div class="fallback-message">
     <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
     <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
-    <p>Or go to the <a href="presentacio.html">original presentation</a>.</p>
+    <p>Or go to the <a href="presentacio">original presentation</a>.</p>
 </div>
 
 <div id="impress"
@@ -36,7 +30,7 @@
     data-autoplay="7">
 
     <div id="medi" class="step slide" data-x="-1000" data-y="-1500" data-autoplay="10">
-        <q>El <b>medi ambient</b> està molt brut de plàstics, perquè no ajudar a netejar-lo?</q>
+        <q>El <b>medi ambient</b> estÃ  molt brut de plÃ stics, perquÃ¨ no ajudar a netejar-lo?</q>
     </div>
 
     <div id="eina" class="step slide" id="eina" data-x="0" data-y="-1500">
@@ -52,39 +46,26 @@
     </div>
 
     <div id="es" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
-        <p>És un<strong> projecte </strong> <br/>
+        <p>Ãˆs un<strong> projecte </strong> <br/>
         per netejar els boscos amb ajuda dels nens i nenes de les <br/>
-        <strong>escoles cooperatives</strong>, es facil d'utilitzar i està creat per nens/es d'aquestes escoles.</p>
+        <strong>escoles cooperatives</strong>, es facil d'utilitzar i estÃ  creat per nens/es d'aquestes escoles.</p>
     </div>
 
     <div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
-        <p>podem netejar el<b>món</b></p>
+        <p>podem netejar el<b>mÃ³n</b></p>
     </div>
 
     <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
         <p>desde les <b>escoles</b> ?</p>
     </div>
 
-    <div id="ing" class="step" data-x="3500" data-y="-850" data-z="0" data-rotate="270" data-scale="6">
-        <p>by <b class="positioning">positioning</b>, <b class="rotating">rotating</b> and <b class="scaling">scaling</b> them on an infinite canvas</p>
-    </div>
-
     <div id="imagination" class="step" data-x="6700" data-y="-300" data-scale="6">
         <p>the only <b>limit</b> is your <b class="imagination">imagination</b></p>
     </div>
 
-    <div id="source" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
-        <p>want to know more?</p>
-        <q><a href="http://github.com/impress/impress.js">use the source</a>, Luke!</q>
-    </div>
-
-    <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
-        <p>one more thing...</p>
-    </div>
-
-    <div id="its-in-3d" class="step" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
-        <p><span class="have">have</span> <span class="you">you</span> <span class="noticed">noticed</span> <span class="its">it’s</span> <span class="in">in</span> <b>3D<sup>*</sup></b>?</p>
-        <span class="footnote">* beat that, prezi ;)</span>
+    <div id="recordeu" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
+        <p>Recordeu el nom...</p>
+        <q><a href="http://github.com/impress/impress.js">RESOLQUEM!</a></q>
     </div>
 
     <div id="overview" class="step" data-x="3000" data-y="1500" data-z="0" data-scale="10">
@@ -95,47 +76,16 @@
 <div id="impress-toolbar"></div>
   
 <div class="hint">
-    <p>Perfect hint!!</p> 
+    <p>Utilitza les fletxes per navegar per les diapositives</p> 
 </div>
 <script>
 if ("ontouchstart" in document.documentElement) { 
-    document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
+    document.querySelector(".hint").innerHTML = "<p>Utilitza les fletxes per navegar per les diapositives</p>";
 }
 </script>
 
 <script>
-// This file was automatically generated from files in src/ directory.
-
-/*! Licensed under MIT License - http://github.com/impress/impress.js */
-/**
- * impress.js
- *
- * impress.js is a presentation tool based on the power of CSS3 transforms and transitions
- * in modern browsers and inspired by the idea behind prezi.com.
- *
- *
- * Copyright 2011-2012 Bartek Szopka (@bartaz), 2016-2020 Henrik Ingo (@henrikingo)
- *
- * Released under the MIT License.
- *
- * ------------------------------------------------
- *  author:  Bartek Szopka, Henrik Ingo
- *  version: 1.1.0
- *  url:     http://impress.js.org
- *  source:  http://github.com/impress/impress.js/
- */
-
-// You are one of those who like to know how things work inside?
-// Let me show you the cogs that make impress.js run...
-( function( document, window ) {
-    "use strict";
-    var lib;
-
-    // HELPER FUNCTIONS
-
-    // `pfx` is a function that takes a standard CSS property name as a parameter
-    // and returns it's prefixed version valid for current browser it runs in.
-    // The code is heavily inspired by Modernizr http://www.modernizr.com/
+Ã§
     var pfx = ( function() {
 
         var style = document.createElement( "dummy" ).style,
@@ -2178,8 +2128,8 @@ if ("ontouchstart" in document.documentElement) {
         lang = {
             'noNotes': '<div class="noNotes">Keine Notizen hierzu</div>',
             'restart': 'Neustart',
-            'clickToOpen': 'Klicken um Sprecherkonsole zu öffnen',
-            'prev': 'zurück',
+            'clickToOpen': 'Klicken um Sprecherkonsole zu ï¿½ffnen',
+            'prev': 'zurï¿½ck',
             'next': 'weiter',
             'loading': 'initalisiere',
             'ready': 'Bereit',
