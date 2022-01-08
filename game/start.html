@@ -5,6 +5,21 @@
 		<link rel="icon" href="resolquem.png">
 	</head>
     <body>
-        
+        <h1>Primer de tot...</h1>
+		</br></br>
+		<div id="container">
+		<h2>Tria un nivell de dificultat</h2>
+		<button onclick="nivell(1)">Facil</button><button onclick="nivell(2)">Mitjà</button><button onclick="nivell(3)">Dificil</button>
+		</div>
     </body>
+	<script>
+		function nivell(n){
+			sessionStrorage.setitem("level", n)
+			document.GetElementById('container'),.innerHTML = "
+			<h2>Normes del joc</h2>
+			<p>Per jugar a aquest joc s'ha de ser ràpid, ja que et van fent preguntes i les has de respondre. Depen del nivell que has triat, hi haurà dos botons, quatre, o un quadre de text per respondre les respostes. Si ets el/la professor/a, ves a <a href="profe">l'apartat de professors/es</a> per poder fer el joc una mica més competitiu. Preparat/da per començar el joc?</p>
+			<button onclick='start()'>Començem!</button>
+			"
+		}
+	</script>
 </html>
