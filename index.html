@@ -4,7 +4,10 @@
         <title>El projecte per recollir brossa des de les escoles - RESOLQUEM</title>
     </head>
     <body>
-        <img src="resolquemBig.png" onMouseover="src='coop.png'" onMouseout="src='resolquemBig.png'">
+        <img src="resolquemBig.png; myFunction()" onMouseover="src='coop.png; myFunction()'" onMouseout="src='resolquemBig.png; myFunction()'">
+        <div id="myDIV">
+            De la cooperativa <i>Solquicoop</i>
+        </div>
         <h1>Projecte <i>Resolquem</i></h1>
         <p><i>Resolquem</i> és un projecte per recollir brossa en les excursions i sortides escolars. T'hi apuntes?</p>
         <a href="info">Més informació...</a>
@@ -12,4 +15,14 @@
         <br>
         <a href="entrar">Anem-hi!</a>
         <a href="credits">Credits</a>
+        <script>
+            function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+        </script>
 </body></html>
