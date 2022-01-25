@@ -154,7 +154,7 @@ body{
   text-align: center;
   background-color: #FFFF9F;
   border-radius: 30px;
-  padding-color: #FFFF9F;
+  padding: #FFFF9F;
 }
 #special{
   font-family: 'Stick No Bills', sans-serif;
