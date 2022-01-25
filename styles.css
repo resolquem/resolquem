@@ -2,9 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@800&display=swap');
 /* Add a black background color to the top navigation */
-a{
-  color: blue;
-}
 button{
   display: block;
   width: 250px;
