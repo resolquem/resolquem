@@ -198,4 +198,5 @@ background: linear-gradient(to left, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Fi
 }
 button{
   background-color: #FCE762;
+  border-radius: 50px;
 }
